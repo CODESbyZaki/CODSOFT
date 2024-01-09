@@ -31,5 +31,6 @@ html,body{
 }
 #content{
     font-family: 'Fira Sans', sans-serif;
-    font-size: 15px;
+    margin-top: 150px;
+    font-size: 32px;
 }
