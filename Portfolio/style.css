@@ -1,36 +1,266 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
     margin: 0px;
     padding: 0px;
+    color: white;
     box-sizing: border-box;
 }
-html,body{
+
+html,
+body {
     height: 100%;
     width: 100%;
+    background: black;
 }
-#header{
-    background:#bad3e4;
-    height: 50px;
+
+#header {
+    background: #bae4d9;
+    height: 65px;
     align-items: center;
     padding: 10px 15px;
     display: flex;
     justify-content: space-between;
-    box-shadow: 0px 5px 10px #36454f;
+    box-shadow: 0px 5px 10px #b2bec6;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
-#header a{ 
+#header img{
+    height: 50px;
+    cursor: pointer;
+    width: 50px;
+    border-radius: 50%;
+}
+
+#header a {
     text-decoration: none;
     color: black;
-    font-size: 20px;
-    margin: 5px;
-}
-#home{
-    align-items: center;
-}
-#content{
+    font-size: 25px;
+    font-weight: 400;
+    margin: 5px 28px 5px 0px;
     font-family: 'Fira Sans', sans-serif;
-    margin-top: 150px;
+
+}
+
+#home {
+    align-items: center;
+    margin-left: 19px;
+}
+
+#home {
+    font-family: 'Fira Sans', sans-serif;
+    margin-top: 100px;
     font-size: 32px;
+
+}
+#about{
+    display: flex;
+}
+#about-me .heading{
+    margin-left: 380px
+}
+.heading {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    text-decoration: underline;
+    margin: 19px 0px 5px 0px;
+    text-align: center;
+}
+
+#about h2 {
+    margin: 10px 0px 0px 0px;
+}
+
+#about h2 span {
+    color: #9de0ce;
+}
+
+#about p {
+    color: #d3d5d5;
+    margin-right: 105px;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+.about-img{
+    position: relative;
+    height: fit-content;
+    top: 215px;
+}
+#about img {
+    height: 350px;
+    width: 350px;
+    margin: 0px 30px 0px 0px;
+    box-shadow: 0px 9px 20px 3px #9ebeb6d0 ;
+    border-radius: 50%;
+}
+
+.card-img {
+    margin-left: 3.5rem;
+}
+
+.card-img a {
+    text-decoration: none;
+}
+
+#about .con-icon {
+    height: 50px;
+    width: 50px;
+    margin-left: 2px;
+    margin-top: 15px;
+    background: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 0px 10px 3px whitesmoke;
+}
+
+.skills-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 15px;
+}
+.container{
+    background: #afc3bf;
+    border-radius: 25px;
+    box-shadow:  5px 5px 30px #b1b1b1,
+             -30px -30px 60px #ffffff00;
+    height: 200px;
+    width: 200px;
+    color: black;
+    padding: 30px 25px;
+    margin-right: 15px;
+}
+.container p{
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+}
+.container .icon{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 100px;
+    width: 100px;
+    margin-bottom: 10px;
+}
+.project-container{
+    background: #afc3bf;
+    border-radius: 25px;
+    box-shadow:  5px 5px 30px #b1b1b1,
+             -30px -30px 60px #ffffff00;
+    height: max-content;
+    width: 99%;
+    color: black;
+    padding: 30px 25px;
+    display: flex;
+}
+.project-img{
+    height: 250px;
+    width: 450px;
+    margin-right: 10px;
+}
+.project-info{
+    text-align: justify;
+    font-size: 25px;
+    color: #000000;
+}
+.project-info .btn{
+    border: 0px;
+    color: black;
+    background-color: #9de0ce;
+    padding: 15px 20px;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 15px;
+    transition: 0.3s all ;
+}
+.project-info .btn:hover{
+    background-color: #000000;
+    color: #9de0ce;
+    box-shadow: 4px 4px 5px 1px #698c80;  
+}
+.project-info .btn:hover .ri-send-plane-fill{
+    color: #fff;
+}
+.ri-send-plane-fill{
+    color: #000000;
+}
+#resume{
+    margin-left: 0px !important;
+    margin-right: 5px;
+    padding-top: 15px;
+}
+.resume{
+    background-image: url(resume.jpg);
+    height: 950px;
+    background-position: center;
+    border: 5px solid white;
+    margin-left: 0px !important;
+}
+.resume .btn{
+    position: relative;
+    bottom: -785px;
+    border: 0px;
+    color: black;
+    background-color: #9de0ce;
+    padding: 15px 20px;
+    font-size: 40px;
+    font-weight: bold;
+    border-radius: 50px;
+    right: -665px;
+    transition: 0.3s all ease-out;
+}
+.resume .btn:hover{
+    background-color: #000000;
+    color: #9de0ce;
+    box-shadow: 4px 4px 5px 1px #698c80;
+}
+
+.contact{
+    background: #bae4d9;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+}
+.contact p{
+    color: #000000;
+}
+.contact ul{
+    list-style: none;
+    padding: 25px;
+}
+.ri-arrow-right-s-fill{
+    font-size: 25px;
+    color: #000000;
+}
+.contact li a{
+    color: #000000;
+    font-size: 25px;
+}
+.con-icon {
+    height: 50px;
+    width: 50px;
+    margin-left: 2px;
+    margin-top: 15px;
+    background: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 0px 10px 3px whitesmoke;
+}
+.contact-details{
+    padding: 30px 15px;
+}
+.contact-details span{
+    font-weight: 400;
+    font-family: 'Fira Sans', sans-serif;
+    color: #000000;
+}
+.ri-mail-line, .ri-phone-line{
+    color: #000000;
 }
