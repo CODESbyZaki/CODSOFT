@@ -24,7 +24,7 @@ header{
     height: 50px;
     background: #F8F8F8;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 header div ol li .quantity{
@@ -43,6 +43,7 @@ header div ol li .quantity{
 .logo{
     font-size: 2.2em;
     text-decoration: none;
+    padding-left: 20px;
     color: rgb(0, 0, 0);
     font-family: 'Pacifico', cursive;
 }
